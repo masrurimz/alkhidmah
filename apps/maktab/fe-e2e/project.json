@@ -1,13 +1,13 @@
 {
-  "name": "maktab-e2e",
-  "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/maktab-e2e/src",
+  "name": "maktab-fe-e2e",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/maktab/fe-e2e/src",
   "projectType": "application",
   "targets": {
     "e2e": {
       "executor": "@nrwl/cypress:cypress",
       "options": {
-        "cypressConfig": "apps/maktab-e2e/cypress.config.ts",
+        "cypressConfig": "apps/maktab/fe-e2e/cypress.config.ts",
         "devServerTarget": "maktab-fe:serve:development",
         "testingType": "e2e"
       },
@@ -21,7 +21,7 @@
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["apps/maktab-e2e/**/*.{js,ts}"]
+        "lintFilePatterns": ["apps/maktab/fe-e2e/**/*.{js,ts}"]
       }
     }
   },
