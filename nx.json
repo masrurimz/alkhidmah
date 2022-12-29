@@ -35,10 +35,6 @@
     ],
     "sharedGlobals": ["{workspaceRoot}/babel.config.json"]
   },
-  "workspaceLayout": {
-    "appsDir": "packages",
-    "libsDir": "packages"
-  },
   "generators": {
     "@nrwl/react": {
       "application": {

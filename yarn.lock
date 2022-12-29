@@ -1613,7 +1613,7 @@
     tmp "~0.2.1"
     tslib "^2.3.0"
 
-"@nrwl/next@^15.4.2":
+"@nrwl/next@15.4.2":
   version "15.4.2"
   resolved "https://registry.yarnpkg.com/@nrwl/next/-/next-15.4.2.tgz#a583e7cd9fa9b7fbed1ef564686fe37579ea2930"
   integrity sha512-CRsyK8yCPz2EIAYtczLbLdmBzycnHa6S6BSSGYk8hETB/fGgsk/Qpd0d4erhOFqRYMvqQMvXKdZ3XiEk/xo5og==
