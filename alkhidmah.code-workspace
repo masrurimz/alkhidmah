@@ -2,6 +2,15 @@
   "folders": [
     {
       "path": "."
+    },
+    {
+      "path": "../nx-trpc-nextjs-starter"
+    },
+    {
+      "path": "../../Templates/ts-notus-nextjs"
+    },
+    {
+      "path": "../../example/nx-photos"
     }
   ],
   "settings": {}

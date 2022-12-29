@@ -8,12 +8,12 @@
       "executor": "@nrwl/cypress:cypress",
       "options": {
         "cypressConfig": "apps/maktab-e2e/cypress.config.ts",
-        "devServerTarget": "maktab:serve:development",
+        "devServerTarget": "maktab-fe:serve:development",
         "testingType": "e2e"
       },
       "configurations": {
         "production": {
-          "devServerTarget": "maktab:serve:production"
+          "devServerTarget": "maktab-fe:serve:production"
         }
       }
     },
@@ -26,5 +26,5 @@
     }
   },
   "tags": [],
-  "implicitDependencies": ["maktab"]
+  "implicitDependencies": ["maktab-fe"]
 }
