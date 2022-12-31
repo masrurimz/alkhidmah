@@ -17,13 +17,7 @@ const Login: NextPageWithLayout = (props) => {
         <Card>
           <div className="my-4">
             <div className="flex flex-col items-center justify-center">
-              {/* <img
-                    className="img-fluid"
-                    src={`/img/${
-                      theme === 'light' ? 'logo.png' : 'logo-white.png'
-                    }`}
-                    alt=""
-                  /> */}
+              <h1>Maktab HAF 2023</h1>
               <p>
                 {`Don't have an account yet? `}
                 <Link href={`${AUTH_PREFIX_PATH}/register`}>Sign Up</Link>
