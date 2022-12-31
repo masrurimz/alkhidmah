@@ -17,7 +17,9 @@ export const AuthLayout = (props: AuthLayoutProps) => {
         className="absolute object-cover -z-1"
         fill
       />
-      <div className="flex h-screen item-center">{children}</div>
+      <div className="flex flex-col h-screen justify-center item-center">
+        {children}
+      </div>
     </>
   );
 };
