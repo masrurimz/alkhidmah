@@ -35,6 +35,7 @@ export const RegisterForm = (props: RegisterFormProps) => {
             type: 'email',
           },
         ]}
+        hasFeedback
       >
         <Input prefix={<MailOutlined className="mr-1" />} />
       </Form.Item>
@@ -44,8 +45,10 @@ export const RegisterForm = (props: RegisterFormProps) => {
         rules={[
           {
             required: true,
+            min: 6,
           },
         ]}
+        hasFeedback
       >
         <Input.Password prefix={<LockOutlined className="mr-1" />} />
       </Form.Item>
