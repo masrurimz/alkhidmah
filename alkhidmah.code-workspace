@@ -11,6 +11,9 @@
     },
     {
       "path": "../../example/nx-photos"
+    },
+    {
+      "path": "../../Templates/mern-auth-emilus"
     }
   ],
   "settings": {}

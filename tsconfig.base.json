@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@alkhidmah/maktab/auth": ["libs/maktab/auth/src/index.ts"],
       "@alkhidmah/maktab/ui": ["libs/maktab/ui/src/index.ts"]
     }
   },
