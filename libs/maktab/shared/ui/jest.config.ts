@@ -1,7 +1,7 @@
 /* eslint-disable */
 export default {
-  displayName: 'maktab-ui',
-  preset: '../../../jest.preset.js',
+  displayName: 'maktab-shared-ui',
+  preset: '../../../../jest.preset.js',
   transform: {
     '^.+\\.[tj]sx?$': [
       '@swc/jest',
@@ -9,5 +9,5 @@ export default {
     ],
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
-  coverageDirectory: '../../../coverage/libs/maktab/ui',
+  coverageDirectory: '../../../../coverage/libs/maktab/shared/ui',
 };

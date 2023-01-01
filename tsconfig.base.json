@@ -16,7 +16,8 @@
     "baseUrl": ".",
     "paths": {
       "@alkhidmah/maktab/auth": ["libs/maktab/auth/src/index.ts"],
-      "@alkhidmah/maktab/ui": ["libs/maktab/ui/src/index.ts"]
+      "@alkhidmah/maktab/shared/db": ["libs/maktab/shared/db/src/index.ts"],
+      "@alkhidmah/maktab/shared/ui": ["libs/maktab/shared/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
