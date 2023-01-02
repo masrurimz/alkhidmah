@@ -1,4 +1,4 @@
-import { trpc } from '../utils';
+import { trpc } from '@alkhidmah/maktab/shared/utils/trpc/client';
 
 export default function IndexPage() {
   const hello = trpc.hello.useQuery({

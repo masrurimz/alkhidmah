@@ -1,7 +1,7 @@
 /* eslint-disable */
 export default {
-  displayName: 'maktab-shared-utils',
-  preset: '../../../../jest.preset.js',
+  displayName: 'maktab-shared-utils-trpc-server',
+  preset: '../../../../../../jest.preset.js',
   transform: {
     '^.+\\.[tj]sx?$': [
       '@swc/jest',
@@ -9,5 +9,6 @@ export default {
     ],
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
-  coverageDirectory: '../../../../coverage/libs/maktab/shared/utils',
+  coverageDirectory:
+    '../../../../../../coverage/libs/maktab/shared/utils/trpc/server',
 };

@@ -24,8 +24,11 @@
       ],
       "@alkhidmah/maktab/shared/db": ["libs/maktab/shared/db/src/index.ts"],
       "@alkhidmah/maktab/shared/ui": ["libs/maktab/shared/ui/src/index.ts"],
-      "@alkhidmah/maktab/shared/utils": [
-        "libs/maktab/shared/utils/src/index.ts"
+      "@alkhidmah/maktab/shared/utils/trpc/client": [
+        "libs/maktab/shared/utils/trpc/client/src/index.ts"
+      ],
+      "@alkhidmah/maktab/shared/utils/trpc/server": [
+        "libs/maktab/shared/utils/trpc/server/src/index.ts"
       ]
     }
   },

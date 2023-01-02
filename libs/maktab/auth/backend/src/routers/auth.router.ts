@@ -1,4 +1,4 @@
-import { procedure, router } from '@alkhidmah/maktab/shared/utils';
+import { procedure, router } from '@alkhidmah/maktab/shared/utils/trpc/server';
 import { z } from 'zod';
 
 export const authRouter = router({
@@ -6,7 +6,8 @@ export const authRouter = router({
     .input(
       z.object({
         email: z.string().email(),
-        password: z.string().min(8),
+        password: z.string().min(6),
+        name: z.string(),
       })
     )
     .mutation(async ({ input, ctx }) => {
@@ -14,6 +15,7 @@ export const authRouter = router({
         data: {
           email: input.email,
           password: input.password,
+          name: input.name,
         },
       });
 

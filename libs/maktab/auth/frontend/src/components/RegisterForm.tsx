@@ -1,20 +1,35 @@
-import { LockOutlined, MailOutlined } from '@ant-design/icons';
+import { LockOutlined, MailOutlined, IdcardOutlined } from '@ant-design/icons';
 import { Button, Form, Input } from 'antd';
 import Link from 'next/link';
 import { AUTH_PREFIX_PATH } from '../auth.constant';
+import { trpc } from '@alkhidmah/maktab/shared/utils/trpc/client';
+
+interface RegisterForm {
+  email: string;
+  password: string;
+  name: string;
+}
 
 interface RegisterFormProps {}
 
 export const RegisterForm = (props: RegisterFormProps) => {
-  const { allowRedirect } = props;
+  const {} = props;
 
-  const initialCredential = {
+  const register = trpc.auth.register.useMutation({
+    onSuccess(data, variables, context) {
+      alert('success resgister');
+    },
+  });
+
+  const initialCredential: RegisterForm = {
     email: '',
     password: '',
+    name: '',
   };
 
-  const onRegister = (values) => {
+  const onRegister = (values: RegisterForm) => {
     console.log({ values });
+    register.mutate(values);
   };
 
   const loading = false;
@@ -32,14 +47,24 @@ export const RegisterForm = (props: RegisterFormProps) => {
         rules={[
           {
             required: true,
-          },
-          {
             type: 'email',
           },
         ]}
         hasFeedback
       >
         <Input prefix={<MailOutlined className="mr-1" />} />
+      </Form.Item>
+      <Form.Item
+        name="name"
+        label="Name"
+        rules={[
+          {
+            required: true,
+          },
+        ]}
+        hasFeedback
+      >
+        <Input prefix={<IdcardOutlined className="mr-1" />} />
       </Form.Item>
       <Form.Item
         name="password"

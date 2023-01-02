@@ -1,7 +1,7 @@
 {
-  "name": "maktab-shared-utils",
-  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/maktab/shared/utils/src",
+  "name": "maktab-shared-utils-trpc-server",
+  "$schema": "../../../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/maktab/shared/utils/trpc/server/src",
   "projectType": "library",
   "tags": [],
   "targets": {
@@ -9,14 +9,16 @@
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["libs/maktab/shared/utils/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": [
+          "libs/maktab/shared/utils/trpc/server/**/*.{ts,tsx,js,jsx}"
+        ]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "libs/maktab/shared/utils/jest.config.ts",
+        "jestConfig": "libs/maktab/shared/utils/trpc/server/jest.config.ts",
         "passWithNoTests": true
       }
     }
