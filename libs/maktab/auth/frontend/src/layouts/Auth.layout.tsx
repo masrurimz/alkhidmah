@@ -11,6 +11,15 @@ export const AuthLayout = (props: AuthLayoutProps) => {
 
   return (
     <>
+      <style global jsx>{`
+        html,
+        body,
+        body > div:first-child,
+        div#__next,
+        div#__next > div {
+          height: 100%;
+        }
+      `}</style>
       <Image
         alt="background image"
         src={backgroundImage}
