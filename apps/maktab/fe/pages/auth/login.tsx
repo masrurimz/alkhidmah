@@ -4,7 +4,7 @@ import {
   AuthLayout,
   AUTH_PREFIX_PATH,
   LoginForm,
-} from '@alkhidmah/maktab/auth';
+} from '@alkhidmah/maktab/auth/frontend';
 import Link from 'next/link';
 import { NextPageWithLayout } from '../_app';
 

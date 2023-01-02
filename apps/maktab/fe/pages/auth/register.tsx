@@ -2,7 +2,7 @@ import {
   AuthLayout,
   AUTH_PREFIX_PATH,
   RegisterForm,
-} from '@alkhidmah/maktab/auth';
+} from '@alkhidmah/maktab/auth/frontend';
 import { Card, Col, Row } from 'antd';
 import Link from 'next/link';
 import { ReactElement } from 'react';

@@ -5,6 +5,8 @@ declare global {
   var prisma: PrismaClient | undefined;
 }
 
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 const globalForPrisma = global as unknown as { prisma: PrismaClient };
 
 export const prisma =
@@ -13,4 +15,6 @@ export const prisma =
     log: ['query'],
   });
 
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 if (process.env.NODE_ENV !== 'production') globalForPrisma.prisma = prisma;

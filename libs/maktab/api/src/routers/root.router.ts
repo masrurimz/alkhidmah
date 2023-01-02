@@ -1,7 +1,6 @@
-import { authRouter } from '@alkhidmah/maktab/auth';
+import { authRouter } from '@alkhidmah/maktab/auth/backend';
 import { procedure, router } from '@alkhidmah/maktab/shared/utils';
 import { z } from 'zod';
-// import { authRouter } from './auth.router';
 
 export const maktabRouter = router({
   hello: procedure

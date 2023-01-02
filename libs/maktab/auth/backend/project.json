@@ -1,24 +1,24 @@
 {
-  "name": "maktab-auth",
-  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/maktab/auth/src",
+  "name": "maktab-auth-backend",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/maktab/auth/backend/src",
   "projectType": "library",
-  "tags": [],
   "targets": {
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["libs/maktab/auth/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": ["libs/maktab/auth/backend/**/*.ts"]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "libs/maktab/auth/jest.config.ts",
+        "jestConfig": "libs/maktab/auth/backend/jest.config.ts",
         "passWithNoTests": true
       }
     }
-  }
+  },
+  "tags": []
 }
