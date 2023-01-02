@@ -1,5 +1,8 @@
+import { authRouter } from '@alkhidmah/maktab/auth';
+import { procedure, router } from '@alkhidmah/maktab/shared/utils';
 import { z } from 'zod';
-import { procedure, router } from '../trpc';
+// import { authRouter } from './auth.router';
+
 export const maktabRouter = router({
   hello: procedure
     .input(
@@ -12,6 +15,7 @@ export const maktabRouter = router({
         greeting: `hello ${input.text}`,
       };
     }),
+  authRouter,
 });
 // export type definition of API
 export type MaktabRouter = typeof maktabRouter;

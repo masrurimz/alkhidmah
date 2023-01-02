@@ -18,7 +18,10 @@
       "@alkhidmah/maktab/api": ["libs/maktab/api/src/index.ts"],
       "@alkhidmah/maktab/auth": ["libs/maktab/auth/src/index.ts"],
       "@alkhidmah/maktab/shared/db": ["libs/maktab/shared/db/src/index.ts"],
-      "@alkhidmah/maktab/shared/ui": ["libs/maktab/shared/ui/src/index.ts"]
+      "@alkhidmah/maktab/shared/ui": ["libs/maktab/shared/ui/src/index.ts"],
+      "@alkhidmah/maktab/shared/utils": [
+        "libs/maktab/shared/utils/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]

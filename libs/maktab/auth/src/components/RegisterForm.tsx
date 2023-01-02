@@ -13,7 +13,9 @@ export const RegisterForm = (props: RegisterFormProps) => {
     password: '',
   };
 
-  const onRegister = (values) => {};
+  const onRegister = (values) => {
+    console.log({ values });
+  };
 
   const loading = false;
 

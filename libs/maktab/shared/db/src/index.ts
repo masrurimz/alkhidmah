@@ -1,1 +1,1 @@
-export * from './lib/maktab-shared-db';
+export * from './lib/client';

@@ -1,3 +1,4 @@
-export * from './lib/components';
-export * from './lib/layouts';
-export * from './lib/auth.constant';
+export * from './components';
+export * from './layouts';
+export * from './auth.constant';
+export * from './routers/auth.router';
