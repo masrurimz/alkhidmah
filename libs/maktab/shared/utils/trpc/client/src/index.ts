@@ -1,1 +1,1 @@
-export * from '../../../../../api/src/client';
+export * from './client';
